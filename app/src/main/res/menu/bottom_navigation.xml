@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_play"
+        android:title="Profile" />
+    <item
+        android:id="@+id/bottom_diary"
+        android:enabled="true"
+        android:icon="@drawable/ic_play"
+        android:title="Diary" />
+    <item
+        android:id="@+id/bottom_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_play"
+        android:title="Home" />
+    <item
+        android:id="@+id/bottom_music"
+        android:enabled="true"
+        android:icon="@drawable/ic_play"
+        android:title="Music" />
+    <item
+        android:id="@+id/bottom_playlist"
+        android:enabled="true"
+        android:icon="@drawable/ic_play"
+        android:title="Play List" />
+</menu>

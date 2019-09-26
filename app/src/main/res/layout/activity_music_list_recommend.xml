@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="#121319"
+    android:orientation="horizontal"
+    tools:context=".MusicList_recommend">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/dg_item_box_radius">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_r"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/music_profile" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_centerInParent="true"
+                android:src="#FFFFFF" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/title_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:letterSpacing="-0.03"
+                android:lineSpacingExtra="5sp"
+                android:textColor="#e4e4e4"
+                android:textSize="10sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="85dp"
+                tools:text="난 애플파이라고 말해주세요" />
+
+            <TextView
+                android:id="@+id/singer_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:letterSpacing="-0.03"
+                android:lineSpacingExtra="4sp"
+                android:textColor="#e4e4e4"
+                android:textSize="9sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:text="김민준" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/playbtn_r"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_play_white" />
+    </LinearLayout>
+
+</LinearLayout>

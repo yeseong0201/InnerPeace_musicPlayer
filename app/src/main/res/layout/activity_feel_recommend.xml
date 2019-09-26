@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:background="#121319"
+    tools:context=".FeelRecommend">
+
+    <RelativeLayout
+        android:id="@+id/tab_design"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#452a4c" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="260dp"
+                android:layout_alignTop="@+id/linear"
+                android:layout_weight="1"
+                android:background="#452a4c" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="261dp"
+            android:background="@drawable/dg_feel_activity_radius"></View>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/feel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="126dp"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="7sp"
+        android:text="안정"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feel_word1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="7sp"
+        android:text="Relax"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feel_text" />
+
+
+    <TextView
+        android:id="@+id/feel_word2"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="7sp"
+        android:text="Comport"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/feel_word1"
+        app:layout_constraintTop_toBottomOf="@id/feel_text" />
+
+    <TextView
+        android:id="@+id/feel_word3"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="7sp"
+
+        android:text="Stablity"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/feel_word2"
+        app:layout_constraintTop_toBottomOf="@id/feel_text" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toRightOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:src="#fff" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="7sp"
+        android:text="List"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
